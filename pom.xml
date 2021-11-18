@@ -30,7 +30,7 @@
 
         <!-- MVC dependencies-->
 
-<!--        <dependency>
+        <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
             <version>${spring.version}</version>
@@ -45,7 +45,7 @@
             <artifactId>javax.servlet-api</artifactId>
             <version>3.0.1</version>
             <scope>provided</scope>
-        </dependency>-->
+        </dependency>
 
         <!-- Database dependencies-->
 
