@@ -30,16 +30,6 @@ public class Game {
 
     public Game(){}
 
-    public Game(int id, String title, String developer, String publisher, String genre, Date releaseDate, boolean multiplayer) {
-        this.id = id;
-        this.title = title;
-        this.developer = developer;
-        this.publisher = publisher;
-        this.genre = genre;
-        this.releaseDate = releaseDate;
-        this.multiplayer = multiplayer;
-    }
-
     public int getId() {
         return id;
     }

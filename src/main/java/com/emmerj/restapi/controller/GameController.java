@@ -21,12 +21,37 @@ public class GameController {
     }
 
     @GetMapping()
-    public List<Game> helloWorld(){
+    public List<Game> getAllGames(){
         return gameService.getAllGames();
     }
 
     @PostMapping()
     public Game addGame(@RequestBody Game game){
         return gameService.addGame(game);
+    }
+
+    @GetMapping( "/{id}")
+    public Game getGameById(@PathVariable("id") Integer gameId){
+        return gameService.getGameById(gameId);
+    }
+
+    @DeleteMapping( "/{id}")
+    public void deleteGameById(@PathVariable("id") Integer gameId){
+        gameService.deleteGameById(gameId);
+    }
+
+    @GetMapping( "/upcoming")
+    public List<Game> getUpcomingGames(){
+        return gameService.getUpcomingGames();
+    }
+
+    @GetMapping(value = "/singleplayer")
+    public List<Game> getSinglePlayerGames(){
+        return gameService.getSinglePlayerGames();
+    }
+
+    @GetMapping(value = "/multiplayer")
+    public List<Game> getMultiplayerGames(){
+        return gameService.getMultiplayerGames();
     }
 }
