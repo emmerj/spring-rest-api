@@ -28,15 +28,14 @@
             <version>${spring.version}</version>
         </dependency>
 
+        <!-- Database dependencies-->
+
         <!-- Pour permettre l'intégration d'un ORM (hibernate)-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-orm</artifactId>
             <version>${spring.version}</version>
         </dependency>
-
-        <!-- Database dependencies-->
-
         <!-- Pour définir nos entité et notre repository -->
         <dependency>
             <groupId>org.springframework.data</groupId>
