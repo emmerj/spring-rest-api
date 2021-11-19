@@ -45,12 +45,12 @@ public class GameController {
         return gameService.getUpcomingGames();
     }
 
-    @GetMapping(value = "/singleplayer")
+    @GetMapping( "/singleplayer")
     public List<Game> getSinglePlayerGames(){
         return gameService.getSinglePlayerGames();
     }
 
-    @GetMapping(value = "/multiplayer")
+    @GetMapping( "/multiplayer")
     public List<Game> getMultiplayerGames(){
         return gameService.getMultiplayerGames();
     }

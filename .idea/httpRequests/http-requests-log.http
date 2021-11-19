@@ -1,0 +1,14 @@
+GET http://localhost:8080/games/upcoming
+
+<> 2021-11-19T072048.200.json
+
+###
+
+GET http://localhost/games/upcoming
+
+###
+
+GET http://localhost/games/upcoming
+
+###
+
