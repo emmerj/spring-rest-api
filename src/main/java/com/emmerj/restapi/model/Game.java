@@ -1,10 +1,18 @@
 package com.emmerj.restapi.model;
 
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Column;
 import java.util.Date;
 
+@Entity
 public class Game {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int id;
 
     private String title;
@@ -15,6 +23,7 @@ public class Game {
 
     private String genre;
 
+    @Column(name = "Release_Date")
     private Date releaseDate;
 
     private boolean multiplayer;
