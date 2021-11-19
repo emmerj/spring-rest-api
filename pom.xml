@@ -28,6 +28,39 @@
             <version>${spring.version}</version>
         </dependency>
 
+        <!-- Database dependencies-->
+<!--
+        &lt;!&ndash; Pour permettre l'intégration d'un ORM (hibernate)&ndash;&gt;
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        &lt;!&ndash; Pour définir nos entité et notre repository &ndash;&gt;
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+            <version>1.9.0.RELEASE</version>
+        </dependency>
+        &lt;!&ndash; Notre ORM ( Faire la gestion de nos entités ) &ndash;&gt;
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+        &lt;!&ndash; Pour se connecter à une BD Postgres &ndash;&gt;
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.2.24</version>
+        </dependency>-->
+
         <!-- MVC dependencies-->
 
 <!--        <dependency>
@@ -45,41 +78,6 @@
             <artifactId>javax.servlet-api</artifactId>
             <version>3.0.1</version>
             <scope>provided</scope>
-        </dependency>-->
-
-        <!-- Database dependencies-->
-
-<!--        &lt;!&ndash; Pour définir nos entité et notre repository &ndash;&gt;
-        <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-jpa</artifactId>
-            <version>1.9.0.RELEASE</version>
-        </dependency>
-
-        &lt;!&ndash; Notre ORM ( Faire la gestion de nos entités ) &ndash;&gt;
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-core</artifactId>
-            <version>${hibernate.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-entitymanager</artifactId>
-            <version>${hibernate.version}</version>
-        </dependency>
-
-        &lt;!&ndash; Pour permettre l'intégration d'un ORM (hibernate)&ndash;&gt;
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-orm</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-
-        &lt;!&ndash; Pour se connecter à une BD Postgres &ndash;&gt;
-        <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <version>42.2.24</version>
         </dependency>-->
 
         <!-- Other dependencies-->
